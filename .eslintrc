@@ -1,0 +1,32 @@
+{
+    "extend": ["eslint:recommended"],
+    "env": {
+        "amd": true,
+        "es6": true,
+        "browser": true,
+        "node": false
+    },
+    "rules": {
+        "semi": ["error", "always"],
+        "semi-spacing": ["error", { "after": true, "before": false }],
+        "semi-style": ["error", "last"],
+        "no-extra-semi": "error",
+        "no-unexpected-multiline": "error",
+        "no-unreachable": "error",
+        "operator-linebreak": ["error", "before"],
+        "quotes": ["error", "single", { "avoidEscape": true }],
+        "max-len": ["error", { "code": 120, "tabWidth": 2 }],
+        "indent": ["error", 2],
+        "comma-dangle": ["error", "always-multiline"],
+        "curly": "error",
+        "no-undef": "off"
+    },
+    "overrides": [
+        {
+            "files": ["*.vue"],
+            "rules": {
+                "indent": "off"
+            }
+        }
+    ]
+}
